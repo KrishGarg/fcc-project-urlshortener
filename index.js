@@ -46,7 +46,7 @@ app.get("/api/shorturl/:id", async (req, res) => {
   return res.redirect(longURL);
 });
 
-function validateURL(url, protocols = ["http", "https"]) {
+function validateURL(s, protocols = ["http", "https"]) {
   try {
     const url = new URL(s);
     return protocols
