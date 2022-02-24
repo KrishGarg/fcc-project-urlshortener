@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const { Deta } = require("deta");
-const validUrl = require("valid-url");
 const { URL } = require("url");
 
 const app = express();
